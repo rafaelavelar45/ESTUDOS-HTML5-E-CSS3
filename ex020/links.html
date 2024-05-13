@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+        # = id
+        . = classe
+        : = pseudo-class
+        ::pseudo-element
+        > = clildren*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            /* tirar sublinhados */
+            font-weight: bold;
+        }
+
+        a:visited
+
+        /* visitados mudar a cor de link visitados ou nao */
+            {
+            color: darkred;
+
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active
+
+        /* a cor dele ativo  quando clicar no link*/
+            {
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(250, 88, 88);
+        }
+
+        .especial::before {
+            content: ' → ';
+
+        }
+
+        .especial::after
+
+        /* meu pseudo elemento é representado por :: , after depois */
+            {
+            content: '← ';
+            /* significa conteudo o content  o [link] vai dizer que um link */
+            font-weight: normal;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="https://github.com/rafaelavelar45" target="_blank">Repositório do Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do Curso em video</a></li>
+    </ul>
+</body>
+
+</html>

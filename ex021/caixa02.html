@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping tag</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: rgb(88, 85, 85);
+        }
+
+        article>aside {
+            background-color: rgb(216, 207, 207);
+        }
+
+        nav {
+            background-color: lightgreen;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            /* deslocamento horizontal, deslocamento vertical,
+            espalhamento , cor */
+
+        }
+
+        nav>a {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 4px 1px rgb(0, 0, 0, 0.315);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+             /* border-radius: 50%; deixa redondo */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--<div>Box level</div>-->
+    <!--<span>inline level</span>-->
+    <header>
+        <h1>Meu site</h1>
+        <nav> <!--menu-->
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+        </nav>
+    </header>
+    <main> <!--conteudo principal-->
+        <section id="assuntos">
+
+        </section> <!--sessoes dentro do site-->
+        <section id="noticias">
+
+            <article>
+                <aside>
+                    <h2>Noticias sobre o Brasil</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis consectetur in doloremque quam
+                        quos consequuntur omnis quae, fugit assumenda odio totam quia dolor nostrum magnam esse nisi
+                        suscipit itaque repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                        similique repellat odit? Delectus, soluta asperiores id necessitatibus corporis ratione
+                        obcaecati tempora quas quia natus placeat quam commodi dolorum perferendis distinctio? Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti iste repellendus autem
+                        provident, praesentium labore obcaecati laboriosam ullam aliquam itaque error? Molestias
+                        possimus ut quibusdam impedit quis placeat voluptatem.</p>
+                </aside>
+            </article>
+            <article>
+                <p>Artigo escrito por Jose da Silva</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Densenvolvido pelo curso em video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>
