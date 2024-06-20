@@ -56,27 +56,33 @@ section > p{
 }
 
 #imagem {
-  background-image: url(imagens/background001.jpg);
-  background-position: center center;
+  background-image: url(../imagens/background001.jpg);
+  box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.514);
+  background-position: right center;
+  background-size: cover;
   color: white;
   background-attachment: fixed;
 }
 
 #imagem > p {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.226);
+  background-color: rgba(0, 0, 0, 0.404);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.548);
 }
 
 #imagem2{
-  background-image: url(imagens/background002.jpg);
-  background-position: center center;
+  background-image: url(../imagens/background002.jpg);
+  box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.514);
+  background-position: right center;
+  background-size: cover;
   color: white;
   background-attachment: fixed;
 }
 
 #imagem2 > p {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.356);
+  background-color: rgba(0, 0, 0, 0.425);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.548);
 }
 
 footer {
