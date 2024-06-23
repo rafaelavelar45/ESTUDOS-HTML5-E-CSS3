@@ -7,27 +7,28 @@
     <title>Minha primeira tabela</title>
 
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        table{
+        table {
+            height: 400px;
             width: 400px;
             border-collapse: collapse;
-            border: 5px solid black;
         }
 
-        .linha{
-            background-color: gray;
-        }
-
-        .dado{
-            background-color: red
-        }
-
-        td{
+        td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            /* ALINHAMENTO HORIZONTAL */
+            vertical-align: middle;
+            /* ALINHAMENTO VERTICAL */
+        }
+
+        .numero {
+            
+             text-align: right;
         }
     </style>
 </head>
@@ -44,26 +45,34 @@
 
     <table>
         <!--NÃO É NECESSARIO FECHAR TAG, SEMPRE RESPEITAR A HIERARQUIA PARA NAO TER PROBLEMAS!!-->
-        <tr class="linha"> <!--PRIMEIRA LINHA-->
+        <tr>
+            <!--PRIMEIRA LINHA-->
             <!--Primeira  linha-->
             <td>A1
             <td>B1
             <td>C1
 
-        <tr>  <!--SEGUNDA LINHA-->
+
+        <tr>
+            <!--SEGUNDA LINHA-->
             <td>A2</td>
-            <td class="dado">B2</td>
-            <td>C2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
         </tr>
-        <tr> <!--TERCEIRA LINHA-->
+        <tr>
+            <!--TERCEIRA LINHA-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
-        <tr> <!--QUARTA LINHA-->
-            <td>A4</td> 
+        <tr>
+            <!--QUARTA LINHA-->
+            <td>A4</td>
             <td>B4</td>
-            <td>C4</td> <!--TODO TD NA TABELA E MEU DADO-->
+            <td>C4</td>
+            <!--TODO TD NA TABELA E MEU DADO-->
+        </tr>
+        </td>
         </tr>
     </table>
 </body>
